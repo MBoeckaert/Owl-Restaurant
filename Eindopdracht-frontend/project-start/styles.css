@@ -76,4 +76,22 @@ header .bookTable:hover {
   -webkit-transition: background-color 0.7s ease-out;
   transition: background-color 0.7s ease-out;
 }
+
+nav {
+  background-color: #555555;
+  padding: 2% 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 10vh;
+}
+
+nav .hamburger {
+  color: #fff;
+  font-size: 30px;
+  padding: 1% 1% 0 0;
+}
 /*# sourceMappingURL=styles.css.map */
