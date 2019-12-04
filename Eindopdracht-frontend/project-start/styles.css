@@ -33,6 +33,12 @@ h2 {
   min-height: 100vh;
 }
 
+.shade {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .container {
   max-width: 95vw;
   margin: 0 auto;
@@ -96,7 +102,7 @@ header .bookTable:hover {
 }
 
 nav {
-  background-color: #555555;
+  background-color: #202324;
   padding: 2% 1%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,6 +118,51 @@ nav .hamburger {
   color: #fff;
   font-size: 30px;
   padding: 1% 1% 0 0;
+}
+
+.dropdownMenu {
+  border-top: 0.5px solid #000;
+  background-color: #202324;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 25vh;
+  overflow: auto;
+}
+
+.dropdownMenu .dropdown .dropbtn {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.dropdownMenu .dropdown .dropbtn:hover {
+  color: #d0963e;
+}
+
+.dropdownMenu a {
+  margin-left: 15px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.dropdownMenu a:hover {
+  color: #d0963e;
 }
 
 .slider {
