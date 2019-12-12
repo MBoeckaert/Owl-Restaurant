@@ -132,6 +132,7 @@ nav .hamburger {
           flex-direction: column;
   max-height: 25vh;
   overflow: auto;
+  visibility: hidden;
 }
 
 .dropdownMenu .dropdown .dropbtn {
@@ -163,6 +164,10 @@ nav .hamburger {
 
 .dropdownMenu a:hover {
   color: #d0963e;
+}
+
+.dropActive {
+  visibility: visible;
 }
 
 .slider {

@@ -107,6 +107,7 @@ nav{
     flex-direction: column;
     max-height: 25vh;
     overflow: auto;
+    visibility: hidden;
     .dropdown{
         .dropbtn{
             color: #fff;
@@ -136,6 +137,9 @@ nav{
     a:hover{
         color: #d0963e;
     }
+}
+.dropActive{
+    visibility: visible;
 }
 
 .slider{
