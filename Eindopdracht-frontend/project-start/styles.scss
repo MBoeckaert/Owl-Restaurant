@@ -99,6 +99,11 @@ nav{
         padding: 1% 1% 0 0;   
     }
 }
+nav.sticky{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 
 .dropdownMenu{
     border-top: 0.5px solid #000;
@@ -107,6 +112,7 @@ nav{
     flex-direction: column;
     max-height: 25vh;
     overflow: auto;
+    visibility: hidden;
     .dropdown{
         .dropbtn{
             color: #fff;
@@ -136,6 +142,9 @@ nav{
     a:hover{
         color: #d0963e;
     }
+}
+.dropactive{
+    visibility: visible;
 }
 
 .slider{
@@ -168,4 +177,8 @@ nav{
             transition: background-color 0.7s ease-out;
         }
     }
+}
+
+.test{
+    min-height: 100vh;
 }

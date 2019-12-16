@@ -120,6 +120,12 @@ nav .hamburger {
   padding: 1% 1% 0 0;
 }
 
+nav.sticky {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .dropdownMenu {
   border-top: 0.5px solid #000;
   background-color: #202324;
@@ -132,6 +138,7 @@ nav .hamburger {
           flex-direction: column;
   max-height: 25vh;
   overflow: auto;
+  visibility: hidden;
 }
 
 .dropdownMenu .dropdown .dropbtn {
@@ -163,6 +170,10 @@ nav .hamburger {
 
 .dropdownMenu a:hover {
   color: #d0963e;
+}
+
+.dropactive {
+  visibility: visible;
 }
 
 .slider {
@@ -213,5 +224,9 @@ nav .hamburger {
   background-color: #d0963e;
   -webkit-transition: background-color 0.7s ease-out;
   transition: background-color 0.7s ease-out;
+}
+
+.test {
+  min-height: 100vh;
 }
 /*# sourceMappingURL=styles.css.map */
