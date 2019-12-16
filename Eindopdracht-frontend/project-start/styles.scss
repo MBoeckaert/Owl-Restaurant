@@ -8,7 +8,7 @@ body{
     text-transform: uppercase;
 }
 
-h1{
+@mixin h1{
     font-size: 32px;
     font-weight: 300;
     letter-spacing: 2px;
@@ -17,7 +17,7 @@ h1{
     text-align: center;
 }
 
-h2{
+@mixin h2{
     font-family: 'Herr Von Muellerhoff', cursive;
     color: #fff;
     font-size: 55px;
@@ -26,17 +26,20 @@ h2{
     text-align: center;
 }
 
+@mixin shade{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
 .homepage{
     background: url("../project-start/img/slider/slide_1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
-}
-
-.shade{
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
+    .shade{
+        @include shade;
+    }
 }
 
 .container{
@@ -163,6 +166,12 @@ nav.sticky{
         flex-direction: column;
         align-items: center;
         .welcomeText{
+            h1{
+                @include h1;
+            }
+            h2{
+                @include h2;
+            }
             margin-bottom: 20px;
         }
     }
@@ -182,10 +191,6 @@ nav.sticky{
     transition: background-color 0.7s ease-out;
 }
 
-.test{
-    min-height: 100vh;
-}
-
 .secondPage{
     display: flex;
     flex-direction: column;
@@ -193,6 +198,7 @@ nav.sticky{
 .ourStory{
     padding-top:  50px;
     h2{
+        @include h2;
         color: #d0963e;
         margin-bottom: 30px;
         span{
@@ -234,4 +240,33 @@ nav.sticky{
     background-color: #d0963e;
     color: #fff;
     transition: background-color 0.7s ease-out;
+}
+
+.thirdPage{
+    background-image: url("../project-start/img/promotions/promotions_area_bg_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    .shade{
+        @include shade;
+    } 
+}
+.specials{
+    h2{
+        @include h2;
+        color: #d0963e;;
+    }
+    h1{
+        @include h1;
+    }
+}
+.specialBreakfast{
+    h2{
+        @include h2;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    h1{
+        @include h1;
+    }
 }
