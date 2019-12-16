@@ -221,6 +221,7 @@ nav.sticky {
   text-align: center;
   font-weight: 700;
   letter-spacing: 2px;
+  display: inline-block;
 }
 
 .clickOnMe:hover {
@@ -242,6 +243,7 @@ nav.sticky {
 
 .ourStory {
   padding-top: 50px;
+  margin-bottom: 30px;
 }
 
 .ourStory h2 {
@@ -276,7 +278,7 @@ nav.sticky {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 10px;
+  margin-bottom: 30px;
 }
 
 .photos img {
@@ -285,23 +287,23 @@ nav.sticky {
 
 .readMore {
   text-decoration: none;
-  border: 1px solid #d0963e;
-  color: #d0963e;
-  padding: 7px;
-  margin: 30px 0;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px;
   text-align: center;
   font-weight: 700;
   letter-spacing: 2px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  display: inline-block;
+  color: #d0963e;
+  border: 1px #d0963e solid;
 }
 
 .readMore:hover {
   border: none;
   background-color: #d0963e;
-  color: #fff;
   -webkit-transition: background-color 0.7s ease-out;
   transition: background-color 0.7s ease-out;
+  color: #fff;
 }
 
 .thirdPage {
@@ -325,6 +327,7 @@ nav.sticky {
   letter-spacing: 2px;
   text-align: center;
   color: #d0963e;
+  text-transform: none;
 }
 
 .specials h1 {
@@ -334,25 +337,74 @@ nav.sticky {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
+  padding-bottom: 30px;
 }
 
-.specialBreakfast h2 {
+.specialFood {
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.specialFood img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.specialFood h2 {
   font-family: 'Herr Von Muellerhoff', cursive;
   color: #fff;
   font-size: 55px;
   font-weight: 700;
   letter-spacing: 2px;
   text-align: center;
-  font-size: 32px;
+  font-size: 44px;
   font-weight: 700;
+  text-transform: none;
 }
 
-.specialBreakfast h1 {
+.specialFood h1 {
   font-size: 32px;
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
+}
+
+.specialFood .orderNow {
+  text-decoration: none;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: inline-block;
+  color: #d0963e;
+  border: 1px #d0963e solid;
+}
+
+.specialFood .orderNow:hover {
+  border: none;
+  background-color: #d0963e;
+  -webkit-transition: background-color 0.7s ease-out;
+  transition: background-color 0.7s ease-out;
+  color: #fff;
+}
+
+.fourthPage {
+  height: 100vh;
 }
 /*# sourceMappingURL=styles.css.map */
