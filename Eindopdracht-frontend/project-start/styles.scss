@@ -40,12 +40,12 @@ h2{
 }
 
 .container{
-    min-height: 5vh;
     max-width: 90vw;
     margin: 0 auto;
 }
 
 header{
+    min-height: 5vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -165,21 +165,21 @@ nav.sticky{
         .welcomeText{
             margin-bottom: 20px;
         }
-        .clickOnMe{
-            text-decoration: none;
-            border: 2px solid #fff;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
-        .clickOnMe:hover{
-            border: none;
-            background-color: #d0963e;
-            transition: background-color 0.7s ease-out;
-        }
     }
+}
+.clickOnMe{
+    text-decoration: none;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.clickOnMe:hover{
+    border: none;
+    background-color: #d0963e;
+    transition: background-color 0.7s ease-out;
 }
 
 .test{
@@ -191,12 +191,47 @@ nav.sticky{
     flex-direction: column;
 }
 .ourStory{
-    h1{
-        color: black;
+    padding-top:  50px;
+    h2{
+        color: #d0963e;
+        margin-bottom: 30px;
+        span{
+            color: #000;
+            font-family: 'Lato', sans-serif;
+        }
     }
+    p{
+        text-transform: none;
+        font-size: 15px;
+        line-height: 1.7;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        margin-bottom: 10px;
+    }  
 }
 .photos{
     display: flex;
     justify-content: center;
     margin: 10px;
+    img{
+        width: 100%;
+    }
+}
+.readMore{
+    text-decoration: none;
+    border: 1px solid #d0963e;
+    color: #d0963e;
+    padding: 7px;
+    margin: 30px 0; 
+    // BOVENSTAANDE MARGIN WERKT NIET!
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+}
+.readMore:hover{
+    border: none;
+    background-color: #d0963e;
+    color: #fff;
+    transition: background-color 0.7s ease-out;
 }
