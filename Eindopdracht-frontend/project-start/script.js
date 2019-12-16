@@ -3,6 +3,7 @@ window.addEventListener("scroll", function (e) {
     var sticky = window.scrollY;
 
     if (sticky >= 40) {
+        e.preventDefault();
         header.classList.add("sticky");
         console.log('100');
     }
