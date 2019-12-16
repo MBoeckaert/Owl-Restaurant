@@ -267,9 +267,33 @@ nav.sticky{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     img{
         width: 100%;
         margin-bottom: 30px;
+    }
+    .from{
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 50%;
+        height: 100px;
+        color: #fff;
+        font-size: 16px;
+        left: 42%;
+        top: 25%;
+        position: absolute;
+        text-align: center;
+        
+        width: 100px;
+        z-index: 4;
+        p{
+            margin: 20px 0 10px;
+            span{
+                display: block;
+                font-size: 28px;
+                font-weight: 700;
+                padding-top: 5px;
+            }
+        }
     }
     h2{
         @include h2;

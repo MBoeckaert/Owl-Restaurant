@@ -355,11 +355,37 @@ nav.sticky {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .specialFood img {
   width: 100%;
   margin-bottom: 30px;
+}
+
+.specialFood .from {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  height: 100px;
+  color: #fff;
+  font-size: 16px;
+  left: 42%;
+  top: 25%;
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  z-index: 4;
+}
+
+.specialFood .from p {
+  margin: 20px 0 10px;
+}
+
+.specialFood .from p span {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  padding-top: 5px;
 }
 
 .specialFood h2 {
