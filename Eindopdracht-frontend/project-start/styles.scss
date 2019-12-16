@@ -93,6 +93,8 @@ nav{
     justify-content: space-between;
     min-height: 10vh;
     border-top: 1px solid #fff;
+    transition: background 1s ease;
+    transition: padding 1s ease;
     .hamburger{
         color: #fff;
         font-size: 30px;
@@ -103,6 +105,7 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 .dropdownMenu{

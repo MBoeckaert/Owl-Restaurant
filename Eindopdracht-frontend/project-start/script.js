@@ -2,7 +2,7 @@ window.addEventListener("scroll", function (e) {
     var header = document.querySelector('nav');
     var sticky = window.scrollY;
 
-    if (sticky >= 100) {
+    if (sticky >= 40) {
         header.classList.add("sticky");
         console.log('100');
     }
