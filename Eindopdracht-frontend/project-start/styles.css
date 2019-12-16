@@ -120,8 +120,8 @@ nav .hamburger {
   padding: 1% 1% 0 0;
 }
 
-nav.sticky {
-  position: absolute;
+.sticky {
+  position: fixed;
   top: 0;
   width: 100%;
 }
@@ -173,6 +173,10 @@ nav.sticky {
 }
 
 .dropactive {
+  visibility: visible;
+}
+
+.dropActive {
   visibility: visible;
 }
 

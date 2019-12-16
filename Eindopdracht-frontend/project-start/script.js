@@ -1,10 +1,10 @@
-window.addEventListener('scroll', function (e) {
-    var header = document.querySelector('.navigation');
+window.addEventListener("scroll", function (e) {
+    var header = document.querySelector('nav');
     var sticky = window.scrollY;
 
-    if (sticky >= 30) {
+    if (sticky >= 100) {
         header.classList.add("sticky");
-        console.log('50');
+        console.log('100');
     }
     else {
         header.classList.remove("sticky");

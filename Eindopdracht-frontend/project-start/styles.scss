@@ -99,8 +99,8 @@ nav{
         padding: 1% 1% 0 0;   
     }
 }
-nav.sticky{
-    position: absolute;
+.sticky{
+    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -150,7 +150,6 @@ nav.sticky{
 .dropActive{
     visibility: visible;
 }
-<!-- check if this is on right place -->
 
 .slider{
     min-height: 75vh;
