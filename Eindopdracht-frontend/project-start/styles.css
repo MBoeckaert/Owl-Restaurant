@@ -117,7 +117,7 @@ nav.sticky {
   position: fixed;
   top: 0;
   width: 95%;
-  z-index: 2;
+  z-index: 8;
 }
 
 .dropdownMenu {
@@ -431,6 +431,57 @@ nav.sticky {
 }
 
 .fourthPage {
-  height: 100vh;
+  background-color: #f3f4f4;
+}
+
+.fourthPage .container {
+  min-height: 100vh;
+}
+
+.fourthPage .container .specials h1 {
+  color: #202324;
+}
+
+.fourthPage .allTheMenus {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.fourthPage .allTheMenus .firstMenu {
+  text-decoration: none;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: inline-block;
+  background-color: #202324;
+  border: none;
+  margin: 5px;
+}
+
+.fourthPage .allTheMenus .allMenu {
+  text-decoration: none;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: inline-block;
+  color: #202324;
+  border: 1px #202324 solid;
+  margin: 5px;
+}
+
+.fourthPage .allTheMenus .allMenu:hover {
+  border: none;
+  background-color: #d0963e;
+  -webkit-transition: background-color 0.7s ease-out;
+  transition: background-color 0.7s ease-out;
+  background-color: #202324;
+  color: #fff;
+  border: none;
 }
 /*# sourceMappingURL=styles.css.map */

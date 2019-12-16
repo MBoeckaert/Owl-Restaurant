@@ -125,7 +125,7 @@ nav.sticky{
     position: fixed;
     top: 0;
     width: 95%;
-    z-index: 2;
+    z-index: 8;
 }
 
 .dropdownMenu{
@@ -282,7 +282,6 @@ nav.sticky{
         top: 25%;
         position: absolute;
         text-align: center;
-        
         width: 100px;
         z-index: 4;
         p{
@@ -316,5 +315,35 @@ nav.sticky{
 }
 
 .fourthPage{
-    height: 100vh;
+    background-color: #f3f4f4;
+    .container{
+        min-height: 100vh;
+        .specials{
+            h1{
+                color: #202324;
+            }
+        }
+    }
+    .allTheMenus{
+        text-align: center;
+        padding: 0 15px;
+        .firstMenu{
+            @include button;
+            background-color: #202324;
+            border: none;
+            margin: 5px;
+        }
+        .allMenu{
+            @include button;
+            color: #202324;
+            border: 1px #202324 solid;
+            margin: 5px;
+        }
+        .allMenu:hover{
+            @include buttonHover;
+            background-color: #202324;
+            color: #fff;
+            border: none;
+        }
+    }
 }
