@@ -390,7 +390,7 @@ nav.sticky{
         h1{
             @include h1;
             color: #202324;
-            font-size: 30px;
+            font-size: 2em;
         }
     }
 }
@@ -448,5 +448,18 @@ form{
     }
     p{
         @include p;
+    }
+}
+
+.events{
+    h2{
+        @include h2;
+        color: #d0963e;
+        text-transform: none;
+    }
+    h1{
+        @include h1;
+        color: #202324;
+        font-size: 2em;
     }
 }
