@@ -127,6 +127,7 @@ nav{
             color: #fff;
             font-size: 30px;
             padding: 1% 1% 0 0; 
+            cursor: pointer;
         } 
 }
 nav.sticky{
@@ -144,7 +145,11 @@ nav.sticky{
     max-height: 25vh;
     overflow: auto;
     visibility: hidden;
-    .dropdown{
+    position: fixed;
+    top: 30vh;
+    width: 100vw;
+    z-index: 5;
+    .dropdown{        
         .dropbtn{
             color: #fff;
             margin-left: 15px;
@@ -429,6 +434,7 @@ form{
         .bookTable:hover{
             @include buttonHover;
             color: #fff;
+            border: 1px solid transparent;
         }
     }
     p{

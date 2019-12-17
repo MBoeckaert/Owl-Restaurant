@@ -111,6 +111,7 @@ nav .hamburger {
   color: #fff;
   font-size: 30px;
   padding: 1% 1% 0 0;
+  cursor: pointer;
 }
 
 nav.sticky {
@@ -133,6 +134,10 @@ nav.sticky {
   max-height: 25vh;
   overflow: auto;
   visibility: hidden;
+  position: fixed;
+  top: 30vh;
+  width: 100vw;
+  z-index: 5;
 }
 
 .dropdownMenu .dropdown .dropbtn {
@@ -616,6 +621,7 @@ form .bookingTable .bookTable:hover {
   -webkit-transition: background-color 0.7s ease-out;
   transition: background-color 0.7s ease-out;
   color: #fff;
+  border: 1px solid transparent;
 }
 
 form p {
