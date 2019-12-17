@@ -553,17 +553,27 @@ nav.sticky {
   font-size: 30px;
 }
 
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 form .formRow {
   position: relative;
 }
 
 form .formRow label {
   position: absolute;
-  font-size: 20px;
-  height: 30px;
+  font-size: 1.2em;
+  height: 3vh;
   right: 0;
-  top: 8px;
-  width: 30px;
+  top: 0.5em;
+  width: 3vw;
 }
 
 form .formRow input {
@@ -578,6 +588,44 @@ form .formRow textarea {
   width: 100%;
   border: 0;
   border-bottom: 1px dashed;
+  margin-bottom: 30px;
+}
+
+form .bookingTable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form .bookingTable .bookTable {
+  text-decoration: none;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: inline-block;
+  color: #d0963e;
+  border: 1px #d0963e solid;
+  margin-bottom: 30px;
+}
+
+form .bookingTable .bookTable:hover {
+  border: none;
+  background-color: #d0963e;
+  -webkit-transition: background-color 0.7s ease-out;
+  transition: background-color 0.7s ease-out;
+  color: #fff;
+}
+
+form p {
+  text-transform: none;
+  font-size: 15px;
+  text-align: center;
   margin-bottom: 30px;
 }
 /*# sourceMappingURL=styles.css.map */
