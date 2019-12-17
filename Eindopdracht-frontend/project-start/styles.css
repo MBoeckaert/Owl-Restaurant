@@ -166,10 +166,6 @@ nav.sticky {
   color: #d0963e;
 }
 
-.dropactive {
-  visibility: visible;
-}
-
 .dropActive {
   visibility: visible;
 }
@@ -685,9 +681,31 @@ form p {
 
 .singleEvent .eventImg .smallEventDate {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   bottom: 0;
   color: #fff;
   border: 1px solid #fff;
-  height: 10vh;
+  height: 15vh;
+  width: 15vh;
+  text-align: center;
+}
+
+.singleEvent .eventImg .smallEventDate p {
+  text-transform: none;
+  margin-bottom: 30px;
+  line-height: 2;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.singleEvent .eventImg .smallEventDate p span {
+  font-size: 30px;
 }
 /*# sourceMappingURL=styles.css.map */

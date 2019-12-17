@@ -174,10 +174,6 @@ nav.sticky{
         color: #d0963e;
     }
 }
-.dropactive{
-    visibility: visible;
-}
-
 .dropActive{
     visibility: visible;
 }
@@ -480,10 +476,22 @@ form{
         }
         .smallEventDate{
             position: absolute;
+            display: flex;
             bottom: 0;
             color: #fff;
             border: 1px solid #fff;
-            height: 10vh;
+            height: 15vh;
+            width: 15vh;
+            text-align: center;
+            p{
+                @include p;
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+                span{
+                    font-size: 30px;
+                }
+            }
         }
     }
     

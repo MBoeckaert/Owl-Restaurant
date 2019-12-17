@@ -1,16 +1,8 @@
 window.addEventListener("scroll", function (e) {
-    var header = document.querySelector('nav');
-    var sticky = window.scrollY;
+    const header = document.querySelector('nav');
+    const sticky = window.scrollY;
 
-    if (sticky >= 40) {
-        e.preventDefault();
-        header.classList.add("sticky");
-        console.log('100');
-    }
-    else {
-        header.classList.remove("sticky");
-        console.log('scrolled!');
-    }
+    sticky >= 40 ? header.classList.add("sticky") : header.classList.remove("sticky")
 });
 
 
@@ -20,7 +12,6 @@ const showNav = () => {
 
     burger.addEventListener('click', () => {
         dropMenu.classList.toggle('dropActive');
-        console.log('clicke');
     });
 }
 
