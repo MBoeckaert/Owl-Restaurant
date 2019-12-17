@@ -469,3 +469,22 @@ form{
         font-size: 2em;
     }
 }
+.singleEvent{
+    border-bottom: 1px #202324 solid;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    .eventImg{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .smallEventDate{
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            border: 1px solid #fff;
+            height: 10vh;
+        }
+    }
+    
+}

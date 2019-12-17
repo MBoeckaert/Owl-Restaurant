@@ -668,4 +668,26 @@ form p {
   color: #202324;
   font-size: 2em;
 }
+
+.singleEvent {
+  border-bottom: 1px #202324 solid;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.singleEvent .eventImg {
+  position: relative;
+}
+
+.singleEvent .eventImg img {
+  width: 100%;
+}
+
+.singleEvent .eventImg .smallEventDate {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  border: 1px solid #fff;
+  height: 10vh;
+}
 /*# sourceMappingURL=styles.css.map */
