@@ -348,5 +348,26 @@ nav.sticky{
     }
 }
 .menuPresentation{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    img{
+        width: 100%;
+    }
+    h4{
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        text-transform: none;
+        font-weight: normal;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        color: #d0963e;
+        font-size: 15px;
+    }
 }
+

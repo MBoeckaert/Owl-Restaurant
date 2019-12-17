@@ -484,4 +484,46 @@ nav.sticky {
   color: #fff;
   border: none;
 }
+
+.menuPresentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+.menuPresentation img {
+  width: 100%;
+}
+
+.menuPresentation h4 {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.menuPresentation p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #d0963e;
+  font-size: 15px;
+}
 /*# sourceMappingURL=styles.css.map */
