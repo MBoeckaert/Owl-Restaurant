@@ -640,6 +640,13 @@ form p {
   line-height: 2;
 }
 
+.sixthPage {
+  background-image: url("../project-start/img/event/event_-02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
 .events h2 {
   font-family: 'Herr Von Muellerhoff', cursive;
   color: #fff;
