@@ -339,6 +339,10 @@ nav.sticky {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.specials {
+  margin-bottom: 30px;
+}
+
 .specials h2 {
   font-family: 'Herr Von Muellerhoff', cursive;
   color: #fff;
@@ -357,7 +361,12 @@ nav.sticky {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
-  padding-bottom: 30px;
+  color: #202324;
+  font-size: 2em;
+}
+
+.specials h1 {
+  color: #fff;
 }
 
 .specialFood {
@@ -767,5 +776,27 @@ form p {
 .singleEvent .eventDetails .event-meta .event-time {
   text-decoration: none;
   color: #202324;
+}
+
+.chefs h2 {
+  font-family: 'Herr Von Muellerhoff', cursive;
+  color: #fff;
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #d0963e;
+  text-transform: none;
+}
+
+.chefs h1 {
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  color: #202324;
+  font-size: 2em;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -55,7 +55,18 @@ line-height: 2;
     background-color: #d0963e;
     transition: background-color 0.7s ease-out;
 }
-
+@mixin pageHeader{
+    h2{
+        @include h2;
+        color: #d0963e;
+        text-transform: none;
+    }
+    h1{
+        @include h1;
+        color: #202324;
+        font-size: 2em;
+    }
+}
 .homepage{
     background: url("../project-start/img/slider/slide_1.jpg");
     background-size: cover;
@@ -267,14 +278,10 @@ nav.sticky{
     } 
 }
 .specials{
-    h2{
-        @include h2;
-        color: #d0963e;
-        text-transform: none;
-    }
+    @include pageHeader;
+    margin-bottom: 30px;
     h1{
-        @include h1;
-        padding-bottom: 30px;
+        color: #fff;
     }
 }
 .specialFood{
@@ -390,16 +397,7 @@ nav.sticky{
 .fifthPage{
     .reservation{
         padding: 50px 0;
-        h2{
-            @include h2;
-            color: #d0963e;
-            text-transform: none;
-        }
-        h1{
-            @include h1;
-            color: #202324;
-            font-size: 2em;
-        }
+        @include pageHeader;
     }
 }
 form{
@@ -467,16 +465,7 @@ form{
     min-height: 100vh;
 }
 .events{
-    h2{
-        @include h2;
-        color: #d0963e;
-        text-transform: none;
-    }
-    h1{
-        @include h1;
-        color: #202324;
-        font-size: 2em;
-    }
+    @include pageHeader;
 }
 .singleEvent{
     border-bottom: 1px solid #C3C3C4;
@@ -527,4 +516,8 @@ form{
             }
         }
     }
+}
+
+.chefs{
+    @include pageHeader;
 }
