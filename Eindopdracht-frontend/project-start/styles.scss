@@ -54,6 +54,7 @@ line-height: 2;
     border: none;
     background-color: #d0963e;
     transition: background-color 0.7s ease-out;
+    border: 2px solid transparent;
 }
 @mixin pageHeader{
     h2{
@@ -266,6 +267,7 @@ nav.sticky{
 .readMore:hover{
     @include buttonHover;
     color: #fff;
+    border: 1px solid transparent;
 }
 
 .thirdPage{
@@ -334,6 +336,7 @@ nav.sticky{
     .orderNow:hover{
         @include buttonHover;
         color: #fff;
+        border: 1px solid transparent;
     }
 }
 

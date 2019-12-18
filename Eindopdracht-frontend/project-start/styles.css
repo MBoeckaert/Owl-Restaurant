@@ -248,6 +248,7 @@ nav.sticky {
   background-color: #d0963e;
   -webkit-transition: background-color 0.7s ease-out;
   transition: background-color 0.7s ease-out;
+  border: 2px solid transparent;
 }
 
 .secondPage {
@@ -323,7 +324,9 @@ nav.sticky {
   background-color: #d0963e;
   -webkit-transition: background-color 0.7s ease-out;
   transition: background-color 0.7s ease-out;
+  border: 2px solid transparent;
   color: #fff;
+  border: 1px solid transparent;
 }
 
 .thirdPage {
@@ -457,7 +460,9 @@ nav.sticky {
   background-color: #d0963e;
   -webkit-transition: background-color 0.7s ease-out;
   transition: background-color 0.7s ease-out;
+  border: 2px solid transparent;
   color: #fff;
+  border: 1px solid transparent;
 }
 
 .fourthPage {
@@ -512,6 +517,7 @@ nav.sticky {
   background-color: #d0963e;
   -webkit-transition: background-color 0.7s ease-out;
   transition: background-color 0.7s ease-out;
+  border: 2px solid transparent;
   background-color: #202324;
   color: #fff;
   border: none;
@@ -652,6 +658,7 @@ form .bookingTable .bookTable:hover {
   background-color: #d0963e;
   -webkit-transition: background-color 0.7s ease-out;
   transition: background-color 0.7s ease-out;
+  border: 2px solid transparent;
   color: #fff;
   border: 1px solid transparent;
 }
