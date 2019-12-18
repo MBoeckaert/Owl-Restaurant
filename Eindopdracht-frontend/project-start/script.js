@@ -10,11 +10,18 @@ const showNav = () => {
 
     const burger = document.querySelector('.hamburger');
     const dropMenu = document.querySelector('.dropdownMenu');
+    const dropAnker = document.querySelector('.anker');
 
     burger.addEventListener('click', (e) => {
         console.log('burger');
         dropMenu.classList.toggle('dropActive');
-    })
+    });
+
+    dropAnker.addEventListener('click', closeNav => {
+        console.log('closeNav');
+        dropMenu.classList.toggle('dropActive');
+    });
+
 }
 
 showNav();
