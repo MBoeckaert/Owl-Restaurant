@@ -518,6 +518,25 @@ form{
     }
 }
 
-.chefs{
+.chefsHeader{
     @include pageHeader;
+    margin-bottom: 30px;
+}
+.chefs{
+    display: flex;
+    .team{
+        width: 100%;
+        img{
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        h3{
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        p{
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
 }
