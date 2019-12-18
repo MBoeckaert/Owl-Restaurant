@@ -96,6 +96,10 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -121,6 +125,20 @@ nav.sticky {
   z-index: 8;
 }
 
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 10vh;
+}
+
 .dropdownMenu {
   border-top: 0.5px solid #000;
   background-color: #202324;
@@ -135,8 +153,8 @@ nav.sticky {
   overflow: auto;
   visibility: hidden;
   position: fixed;
-  top: 30vh;
-  width: 100vw;
+  width: 100%;
+  top: 15vh;
   z-index: 5;
 }
 
