@@ -488,18 +488,22 @@ form{
         }
         .smallEventDate{
             position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
             display: flex;
+            justify-content: center;
             bottom: 0;
             color: #fff;
             border: 1px solid #fff;
             height: 15vh;
             width: 15vh;
-            text-align: center;
+            
             p{
                 @include p;
                 text-transform: uppercase;
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 span{
                     font-size: 30px;
                 }
