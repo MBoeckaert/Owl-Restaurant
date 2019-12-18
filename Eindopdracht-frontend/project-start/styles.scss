@@ -584,3 +584,73 @@ form{
     }
 
 }
+// .ninthPage{
+//     background-color: #202324;
+// }
+.instagramTheme{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    h4{
+        @include h4;
+        .owlTheme{
+            text-decoration: none;
+            color: #d0963e;
+        }
+    }
+}
+footer{
+    background-color: #202324;
+    .footerLogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 20vh;
+    }
+    .footerAdress{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            color: #CACACA;
+            margin-bottom: 20px;
+            a{
+                text-decoration: none;
+                color: #d0963e;
+            }
+        }
+    }
+    .footerSocialMedia{
+        padding: 30px 0;
+        border-bottom: 1px solid #CACACA;
+        ul{
+            min-height: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            li{
+                width: 10%;
+                a{
+                    color: white;
+                    font-size: 20px;
+                    padding: 6px;
+                }
+                a:hover{
+                    color:#d0963e;
+                    transition: background-color 0.7s ease-out;
+                }
+            }
+        }
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        color: #CACACA;
+        padding: 30px 0;
+    }
+}

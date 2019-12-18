@@ -922,4 +922,121 @@ form p {
 .blogPictures .lifestyle h3 {
   margin-bottom: 30px;
 }
+
+.instagramTheme {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 20vh;
+}
+
+.instagramTheme h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.instagramTheme h4 .owlTheme {
+  text-decoration: none;
+  color: #d0963e;
+}
+
+footer {
+  background-color: #202324;
+}
+
+footer .footerLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 20vh;
+}
+
+footer .footerAdress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footerAdress p {
+  color: #CACACA;
+  margin-bottom: 20px;
+}
+
+footer .footerAdress p a {
+  text-decoration: none;
+  color: #d0963e;
+}
+
+footer .footerSocialMedia {
+  padding: 30px 0;
+  border-bottom: 1px solid #CACACA;
+}
+
+footer .footerSocialMedia ul {
+  min-height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+footer .footerSocialMedia ul li {
+  width: 10%;
+}
+
+footer .footerSocialMedia ul li a {
+  color: white;
+  font-size: 20px;
+  padding: 6px;
+}
+
+footer .footerSocialMedia ul li a:hover {
+  color: #d0963e;
+  -webkit-transition: background-color 0.7s ease-out;
+  transition: background-color 0.7s ease-out;
+}
+
+footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #CACACA;
+  padding: 30px 0;
+}
 /*# sourceMappingURL=styles.css.map */
