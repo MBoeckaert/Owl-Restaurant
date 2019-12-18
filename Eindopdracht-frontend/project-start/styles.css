@@ -5,7 +5,7 @@
 body {
   font-family: 'Lato', sans-serif;
   font-size: 15px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .homepage {
@@ -233,6 +233,7 @@ nav.sticky {
 
 .clickOnMe {
   text-decoration: none;
+  text-transform: uppercase;
   border: 2px solid #fff;
   color: #fff;
   padding: 10px;
@@ -305,6 +306,7 @@ nav.sticky {
 
 .readMore {
   text-decoration: none;
+  text-transform: uppercase;
   border: 2px solid #fff;
   color: #fff;
   padding: 10px;
@@ -429,6 +431,7 @@ nav.sticky {
 
 .specialFood .orderNow {
   text-decoration: none;
+  text-transform: uppercase;
   border: 2px solid #fff;
   color: #fff;
   padding: 10px;
@@ -467,6 +470,7 @@ nav.sticky {
 
 .fourthPage .allTheMenus .firstMenu {
   text-decoration: none;
+  text-transform: uppercase;
   border: 2px solid #fff;
   color: #fff;
   padding: 10px;
@@ -481,6 +485,7 @@ nav.sticky {
 
 .fourthPage .allTheMenus .allMenu {
   text-decoration: none;
+  text-transform: uppercase;
   border: 2px solid #fff;
   color: #fff;
   padding: 10px;
@@ -620,6 +625,7 @@ form .bookingTable {
 
 form .bookingTable .bookTable {
   text-decoration: none;
+  text-transform: uppercase;
   border: 2px solid #fff;
   color: #fff;
   padding: 10px;
@@ -689,13 +695,14 @@ form p {
 }
 
 .singleEvent {
-  border-bottom: 1px #202324 solid;
+  border-bottom: 1px solid #C3C3C4;
   margin-bottom: 30px;
   padding-bottom: 30px;
 }
 
 .singleEvent .eventImg {
   position: relative;
+  margin-top: 30px;
 }
 
 .singleEvent .eventImg img {
@@ -740,5 +747,25 @@ form p {
 
 .singleEvent .eventImg .smallEventDate p span {
   font-size: 30px;
+}
+
+.singleEvent .eventDetails {
+  margin: 30px 0;
+}
+
+.singleEvent .eventDetails h3 {
+  font-size: 20px;
+  text-transform: none;
+  margin-bottom: 30px;
+}
+
+.singleEvent .eventDetails .event-meta {
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+.singleEvent .eventDetails .event-meta .event-time {
+  text-decoration: none;
+  color: #202324;
 }
 /*# sourceMappingURL=styles.css.map */
