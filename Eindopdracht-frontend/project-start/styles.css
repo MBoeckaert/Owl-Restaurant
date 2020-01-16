@@ -291,6 +291,8 @@ nav.sticky {
   }
   nav.sticky {
     background-color: #fff;
+    -webkit-box-shadow: 0 5px 8px #888888;
+            box-shadow: 0 5px 8px #888888;
   }
   nav.sticky .logo {
     display: none;
