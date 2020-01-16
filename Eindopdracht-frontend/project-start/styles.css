@@ -37,7 +37,11 @@ header {
           justify-content: space-between;
 }
 
-header ul {
+header .restaurantInfo {
+  display: none;
+}
+
+header .socials {
   min-height: 5vh;
   min-width: 20%;
   display: -webkit-box;
@@ -53,20 +57,20 @@ header ul {
   padding-left: 0px;
 }
 
-header ul li {
+header .socials li {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header ul li a {
+header .socials li a {
   color: white;
   font-size: 14px;
   padding: 6px;
 }
 
-header ul li a:hover {
+header .socials li a:hover {
   background-color: #fff;
   color: #d0963e;
   -webkit-transition: background-color 0.7s ease-out;
