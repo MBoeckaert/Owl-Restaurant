@@ -1043,6 +1043,14 @@ p {
   color: #202324;
 }
 
+@media screen and (min-width: 765px) {
+  .singleEvent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .chefsHeader {
   margin-bottom: 30px;
 }

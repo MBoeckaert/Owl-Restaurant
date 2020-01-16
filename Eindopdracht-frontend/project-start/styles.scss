@@ -707,6 +707,11 @@ p{
     }
 }
 
+@media screen and (min-width:765px){
+  .singleEvent{
+      display: flex;
+  }  
+}
 .chefsHeader{
     @include pageHeader;
     margin-bottom: 30px;
