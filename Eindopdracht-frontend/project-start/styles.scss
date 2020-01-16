@@ -345,10 +345,37 @@ nav.sticky{
 }
 .photos{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-bottom: 30px;
     img{
         width: 100%;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 765px){
+    .secondPage{
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        padding: 7% 0;
+    }
+    .ourStory{
+        width: 40%;
+        padding: 0 30px 0 0;
+        h2{
+            text-align: initial;
+        }
+    }
+    .photos{
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        margin: 0;
+        img{
+            padding: 0 15px;
+            width: 50%;
+        }
     }
 }
 .readMore{
