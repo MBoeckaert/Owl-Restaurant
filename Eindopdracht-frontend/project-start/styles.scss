@@ -248,7 +248,7 @@ nav.sticky{
             display: flex;
 
             .menuContainer{
-              width: 50%;
+                width: 30%;
                 background-color: transparent; 
                 display: flex; 
                 flex-direction: row;
@@ -260,7 +260,7 @@ nav.sticky{
                 visibility: visible;
                 display: flex;
                 flex-direction: row;
-                justify-content: flex-end;
+                justify-content: space-between;
                 background-color: transparent;
                 border-top: none;
                 padding: 3% 0;
@@ -271,6 +271,10 @@ nav.sticky{
 
 .slider{
     min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .burger{
         display: flex;
         flex-direction: column;

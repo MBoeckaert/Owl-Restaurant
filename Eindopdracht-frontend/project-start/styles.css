@@ -256,7 +256,7 @@ nav.sticky {
     display: flex;
   }
   nav .menu .menuContainer {
-    width: 50%;
+    width: 30%;
     background-color: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -278,9 +278,9 @@ nav.sticky {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color: transparent;
     border-top: none;
     padding: 3% 0;
@@ -289,6 +289,19 @@ nav.sticky {
 
 .slider {
   min-height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slider .burger {
