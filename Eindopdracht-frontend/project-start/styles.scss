@@ -459,6 +459,22 @@ nav.sticky{
     }
 }
 
+@media screen and (min-width: 765px){
+    .specials{
+        padding-top: 5%;
+        h2{
+            font-size: 80px;
+        }
+    }
+    .foodContainer{
+        display: flex;
+        padding: 5% 0;
+        .specialFood{
+            padding: 0 15px;
+        }
+    }
+}
+
 .fourthPage{
     background-color: #f3f4f4;
     .container{
