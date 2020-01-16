@@ -754,6 +754,22 @@ nav.sticky {
   font-size: 15px;
 }
 
+@media screen and (min-width: 765px) {
+  .presentationContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 3% 0;
+  }
+  .presentationContainer .menuPresentation {
+    width: 25%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
 .fifthPage .reservation {
   padding: 50px 0;
 }
