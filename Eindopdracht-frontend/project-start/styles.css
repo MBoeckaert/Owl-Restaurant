@@ -874,7 +874,18 @@ p {
   text-transform: none;
   font-size: 15px;
   text-align: center;
+  margin: 30px 0;
+}
+
+.intersection h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.intersection p {
+  text-transform: none;
   margin-bottom: 30px;
+  line-height: 2;
 }
 
 @media screen and (min-width: 765px) {
@@ -911,17 +922,21 @@ p {
   .bookingTable {
     margin: 0 auto;
   }
-}
-
-.intersection h4 {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-.intersection p {
-  text-transform: none;
-  margin-bottom: 30px;
-  line-height: 2;
+  .intersection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5%;
+  }
+  .intersection .intersectionDiv {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 15px;
+    width: 50%;
+  }
+  .intersection .intersectionDiv p {
+    text-align: initial;
+  }
 }
 
 .sixthPage {
