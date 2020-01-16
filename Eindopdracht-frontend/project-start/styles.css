@@ -176,7 +176,6 @@ nav.sticky {
 
 .menu {
   width: 100%;
-  background-color: #202324;
 }
 
 .menu .menuContainer {
@@ -192,8 +191,7 @@ nav.sticky {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 10vh;
-  max-width: 90vw;
-  margin: 0 auto;
+  background-color: #202324;
 }
 
 .dropdownMenu {
@@ -250,14 +248,42 @@ nav.sticky {
 }
 
 @media screen and (min-width: 765px) {
-  .menu {
-    background-color: transparent;
-  }
-  .menu .menuContainer {
+  nav .menu {
     max-width: 80vw;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .menu .hamburger {
+  nav .menu .menuContainer {
+    width: 50%;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  nav .menu .hamburger {
     display: none;
+  }
+  nav .menu .dropdownMenu {
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    background-color: transparent;
+    border-top: none;
+    padding: 3% 0;
   }
 }
 

@@ -185,15 +185,13 @@ nav.sticky{
 }
 .menu{
     width: 100%;
-    background-color: #202324;
     .menuContainer{
         padding: 2%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         min-height: 10vh;
-        max-width: 90vw;
-        margin: 0 auto;
+        background-color: #202324;
     }
 }
 .dropdownMenu{
@@ -204,6 +202,7 @@ nav.sticky{
     max-height: 25vh;
     overflow: auto;
     visibility: hidden;
+    // display: none;/ 
     width: 100%;
     top: 12vh;
     z-index: 5;
@@ -239,17 +238,35 @@ nav.sticky{
 }
 .dropActive{
     visibility: visible;
+    // display: block;
 }
 @media screen and (min-width: 765px){
-    .menu{
-        background-color: transparent;
-        .menuContainer{
+    nav{
+        .menu{
             max-width: 80vw;
-        }
-        .hamburger{
-            display: none;
-        }
-    }
+            margin: 0 auto;
+            display: flex;
+
+            .menuContainer{
+              width: 50%;
+                background-color: transparent; 
+                display: flex; 
+                flex-direction: row;
+            }
+            .hamburger{
+                display: none;
+            }
+            .dropdownMenu{           
+                visibility: visible;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                background-color: transparent;
+                border-top: none;
+                padding: 3% 0;
+            }
+        }    
+    }   
 }
 
 .slider{
