@@ -194,6 +194,9 @@ nav.sticky{
         background-color: #202324;
     }
 }
+.logoSticky{
+    display: none;
+}
 .dropdownMenu{
     border-top: 0.5px solid #000;
     background-color: #202324;
@@ -269,6 +272,20 @@ nav.sticky{
     }  
     nav.sticky{
         background-color: #fff;
+        .logo{
+            display: none;
+        }
+        .logoSticky{
+            display: block;
+        }
+        .dropdown{
+            .dropbtn{
+                color: #000;
+            }
+        }
+        .anker{
+            color: #000;
+        }
     } 
 }
 
