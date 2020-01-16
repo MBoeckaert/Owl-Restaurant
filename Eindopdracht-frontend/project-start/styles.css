@@ -26,22 +26,35 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 765px) {
+  .container {
+    max-width: 80vw;
+  }
+}
+
 header {
   min-height: 5vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.socialTable {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-header .restaurantInfo {
-  display: none;
-}
-
-header .socials {
+.socialTable .socials {
   min-height: 5vh;
   min-width: 20%;
   display: -webkit-box;
@@ -57,27 +70,27 @@ header .socials {
   padding-left: 0px;
 }
 
-header .socials li {
+.socialTable .socials li {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .socials li a {
+.socialTable .socials li a {
   color: white;
   font-size: 14px;
   padding: 6px;
 }
 
-header .socials li a:hover {
+.socialTable .socials li a:hover {
   background-color: #fff;
   color: #d0963e;
   -webkit-transition: background-color 0.7s ease-out;
   transition: background-color 0.7s ease-out;
 }
 
-header .bookTable {
+.socialTable .bookTable {
   text-decoration: none;
   background-color: #d0963e;
   color: #fff;
@@ -87,11 +100,45 @@ header .bookTable {
   letter-spacing: 2px;
 }
 
-header .bookTable:hover {
+.socialTable .bookTable:hover {
   background-color: #fff;
   color: #d0963e;
   -webkit-transition: background-color 0.7s ease-out;
   transition: background-color 0.7s ease-out;
+}
+
+.restaurantInfo {
+  display: none;
+}
+
+@media screen and (min-width: 765px) {
+  .restaurantInfo {
+    display: block;
+    width: 50%;
+  }
+  .restaurantInfo .styleInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .restaurantInfo .styleInfo li {
+    list-style: none;
+    color: #fff;
+    padding: 6px;
+  }
+  .socialTable {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 50%;
+  }
 }
 
 nav {
@@ -128,6 +175,11 @@ nav.sticky {
 }
 
 .menu {
+  width: 100%;
+  background-color: #202324;
+}
+
+.menu .menuContainer {
   padding: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,7 +192,8 @@ nav.sticky {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 10vh;
-  background-color: #202324;
+  max-width: 90vw;
+  margin: 0 auto;
 }
 
 .dropdownMenu {
@@ -194,6 +247,18 @@ nav.sticky {
 
 .dropActive {
   visibility: visible;
+}
+
+@media screen and (min-width: 765px) {
+  .menu {
+    background-color: transparent;
+  }
+  .menu .menuContainer {
+    max-width: 80vw;
+  }
+  .menu .hamburger {
+    display: none;
+  }
 }
 
 .slider {

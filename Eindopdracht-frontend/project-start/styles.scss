@@ -28,6 +28,7 @@ body{
     font-size: 20px;
     margin-bottom: 15px;
 }
+
 @mixin p{
 text-transform: none;
 margin-bottom: 30px;
@@ -82,15 +83,23 @@ line-height: 2;
     max-width: 90vw;
     margin: 0 auto;
 }
+@media screen and (min-width: 765px){
+    .container{
+        max-width: 80vw;
+    }
+}
 
 header{
     min-height: 5vh;
     width: 100%;
     display: flex;
+    // justify-content: space-between;
+}
+.socialTable{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    .restaurantInfo{
-        display:none;
-    }
     .socials{
         min-height: 5vh;
         min-width: 20%;
@@ -110,11 +119,11 @@ header{
             a:hover{
                 background-color: #fff;
                 color:#d0963e;
-                transition: background-color 0.7s ease-out;
+                   transition: background-color 0.7s ease-out;
             }
         }
     }
-    .bookTable{
+    .bookTable{ 
         text-decoration: none;
         background-color: #d0963e;
         color: #fff;
@@ -127,6 +136,29 @@ header{
         background-color: #fff;
         color: #d0963e;
         transition: background-color 0.7s ease-out;
+    }
+}
+.restaurantInfo{
+    display:none;
+}
+@media screen and (min-width: 765px) {
+    .restaurantInfo{
+        display: block;
+        width: 50%;
+        .styleInfo{
+            display: flex;
+            flex-direction: row;
+            li{
+                list-style: none;
+                color: #fff;
+                padding: 6px;
+            }
+        }        
+    }
+    .socialTable{
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
     }
 }
 
@@ -152,14 +184,18 @@ nav.sticky{
     z-index: 8;
 }
 .menu{
-    padding: 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    min-height: 10vh;
+    width: 100%;
     background-color: #202324;
+    .menuContainer{
+        padding: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 10vh;
+        max-width: 90vw;
+        margin: 0 auto;
+    }
 }
-
 .dropdownMenu{
     border-top: 0.5px solid #000;
     background-color: #202324;
@@ -203,6 +239,17 @@ nav.sticky{
 }
 .dropActive{
     visibility: visible;
+}
+@media screen and (min-width: 765px){
+    .menu{
+        background-color: transparent;
+        .menuContainer{
+            max-width: 80vw;
+        }
+        .hamburger{
+            display: none;
+        }
+    }
 }
 
 .slider{
