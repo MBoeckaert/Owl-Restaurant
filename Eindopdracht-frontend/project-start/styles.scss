@@ -553,7 +553,7 @@ nav.sticky{
 form{
     display: flex;
     flex-direction: column;
-    .formRow{ 
+    .formRow, .commentRow{ 
         position: relative;
         label{
             position: absolute;
@@ -577,28 +577,55 @@ form{
             margin-bottom: 30px;
         }
     }
-    .bookingTable{
-        display: flex;
-        justify-content: center;
-        .bookTable{
-            @include button;
-            color: #d0963e;
-            border: 1px #d0963e solid; 
-            margin-bottom: 30px;
-        }
-        .bookTable:hover{
-            @include buttonHover;
-            color: #fff;
-            border: 1px solid transparent;
-        }
-    }
-    p{
-        text-transform: none;
-        font-size: 15px;
-        text-align: center;
+}
+.bookingTable{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    .bookTable{
+        @include button;
+        color: #d0963e;
+        border: 1px #d0963e solid; 
         margin-bottom: 30px;
     }
+    .bookTable:hover{
+        @include buttonHover;
+        color: #fff;
+        border: 1px solid transparent;
+    }
 }
+p{
+    text-transform: none;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width:765px){
+    form{
+        max-width: 50vw;
+        max-height: 30vh;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+            flex-wrap: wrap;
+        .formRow{
+            width: 50%;
+        }
+        .commentRow{
+            width: 100%;
+        }
+    }
+    .secondForm{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 3%;
+    }
+    .bookingTable{
+        margin: 0 auto;
+    }
+}
+
 .intersection{
     h4{
         @include h4;

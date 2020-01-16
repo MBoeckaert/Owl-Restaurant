@@ -806,11 +806,11 @@ form {
           flex-direction: column;
 }
 
-form .formRow {
+form .formRow, form .commentRow {
   position: relative;
 }
 
-form .formRow label {
+form .formRow label, form .commentRow label {
   position: absolute;
   font-size: 1.2em;
   height: 3vh;
@@ -819,7 +819,7 @@ form .formRow label {
   width: 3vw;
 }
 
-form .formRow input {
+form .formRow input, form .commentRow input {
   height: 5vh;
   width: 100%;
   border: 0;
@@ -827,23 +827,25 @@ form .formRow input {
   margin-bottom: 30px;
 }
 
-form .formRow textarea {
+form .formRow textarea, form .commentRow textarea {
   width: 100%;
   border: 0;
   border-bottom: 1px dashed;
   margin-bottom: 30px;
 }
 
-form .bookingTable {
+.bookingTable {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-form .bookingTable .bookTable {
+.bookingTable .bookTable {
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid #fff;
@@ -858,7 +860,7 @@ form .bookingTable .bookTable {
   margin-bottom: 30px;
 }
 
-form .bookingTable .bookTable:hover {
+.bookingTable .bookTable:hover {
   border: none;
   background-color: #d0963e;
   -webkit-transition: background-color 0.7s ease-out;
@@ -868,11 +870,47 @@ form .bookingTable .bookTable:hover {
   border: 1px solid transparent;
 }
 
-form p {
+p {
   text-transform: none;
   font-size: 15px;
   text-align: center;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 765px) {
+  form {
+    max-width: 50vw;
+    max-height: 30vh;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  form .formRow {
+    width: 50%;
+  }
+  form .commentRow {
+    width: 100%;
+  }
+  .secondForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-bottom: 3%;
+  }
+  .bookingTable {
+    margin: 0 auto;
+  }
 }
 
 .intersection h4 {
