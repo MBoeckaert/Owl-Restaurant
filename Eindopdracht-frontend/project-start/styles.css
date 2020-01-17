@@ -515,6 +515,7 @@ nav.sticky {
 
 .specials {
   margin-bottom: 30px;
+  padding-top: 50px;
 }
 
 .specials h2 {
@@ -946,6 +947,10 @@ p {
   min-height: 100vh;
 }
 
+.events {
+  padding-top: 50px;
+}
+
 .events h2 {
   font-family: 'Herr Von Muellerhoff', cursive;
   color: #fff;
@@ -1099,6 +1104,7 @@ p {
 
 .chefsHeader {
   margin-bottom: 30px;
+  padding-top: 50px;
 }
 
 .chefsHeader h2 {
@@ -1146,6 +1152,20 @@ p {
 .chefs .team p {
   margin-bottom: 30px;
   text-align: center;
+}
+
+@media screen and (min-width: 765px) {
+  .teamChef {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .teamChef .chefs {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    padding: 2%;
+  }
 }
 
 .eightPage {
@@ -1201,9 +1221,8 @@ p {
 }
 
 .blogPictures .lifestyle {
-  position: absolute;
-  bottom: -6%;
-  left: 2.5%;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
   width: 85%;
   background-color: #fff;
   display: -webkit-box;
@@ -1240,6 +1259,21 @@ p {
 
 .blogPictures .lifestyle h3 {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 765px) {
+  .allBlog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .allBlog .blogPictures {
+    padding: 1%;
+  }
+  .allBlog .blogPictures .lifestyle {
+    width: 60%;
+    left: 10%;
+  }
 }
 
 .instagramTheme {

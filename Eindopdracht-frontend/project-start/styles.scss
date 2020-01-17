@@ -401,6 +401,7 @@ nav.sticky{
 .specials{
     @include pageHeader;
     margin-bottom: 30px;
+    padding-top: 50px;
     h1{
         color: #fff;
     }
@@ -655,6 +656,7 @@ p{
 }
 .events{
     @include pageHeader;
+    padding-top: 50px;
 }
 .singleEvent{
     border-bottom: 1px solid #C3C3C4;
@@ -752,6 +754,7 @@ p{
 .chefsHeader{
     @include pageHeader;
     margin-bottom: 30px;
+    padding-top: 50px;
 }
 .chefs{
     display: flex;
@@ -771,6 +774,18 @@ p{
         }
     }
 }
+
+@media screen and (min-width:765px){
+    .teamChef{
+        display: flex;
+        .chefs{
+            justify-content: space-around;
+            width: 100%;
+            padding: 2%;
+        }
+    }
+}
+
 .eightPage{
     background-color: #f3f4f4;
     padding-bottom: 30px;
@@ -791,9 +806,7 @@ p{
         width: 100%;
     }
     .lifestyle{
-        position: absolute;
-        bottom: -6%;
-        left: 2.5%;
+        transform: translateY(-150px);
         width: 85%;
         background-color: #fff;
         display: flex;
@@ -807,7 +820,6 @@ p{
             color: #fff;
             border: none;
             margin-bottom: 15px;
-
         }
         h3{
             margin-bottom: 30px;
@@ -815,9 +827,20 @@ p{
     }
 
 }
-// .ninthPage{
-//     background-color: #202324;
-// }
+
+@media screen and (min-width:765px){
+    .allBlog{
+        display: flex;
+        .blogPictures{
+            padding: 1%;
+            .lifestyle{
+                width: 60%;
+                left: 10%;
+            }
+        }
+    }
+}
+
 .instagramTheme{
     background-color: #fff;
     display: flex;
