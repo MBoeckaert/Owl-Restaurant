@@ -706,12 +706,49 @@ p{
         }
     }
 }
+.desktopEvent{
+    display: none;
+}
 
 @media screen and (min-width:765px){
-  .singleEvent{
+    .singleEvent{
+        display: none;
+    }
+    .desktopEvent{
       display: flex;
-  }  
+      padding: 5%;
+        .smallDesktopDate{
+          width: 15vw;
+          height: 20vh;
+          background-color: initial;
+          color: #202324;
+          border: 1px solid #202324;
+          p{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            span{
+                font-size: 67px;
+                }
+            }
+        }
+        .desktopDetails{
+          padding-left: 5%;
+            p{
+                text-align: initial;
+                .event-time{
+                text-decoration: none;
+                color: #000;
+                }
+                .event-time:hover{
+                    color: #d0963e;
+                }
+            }
+        }
+    }  
 }
+
 .chefsHeader{
     @include pageHeader;
     margin-bottom: 30px;

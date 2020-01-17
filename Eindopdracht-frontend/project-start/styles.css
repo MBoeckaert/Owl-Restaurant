@@ -1043,11 +1043,57 @@ p {
   color: #202324;
 }
 
+.desktopEvent {
+  display: none;
+}
+
 @media screen and (min-width: 765px) {
   .singleEvent {
+    display: none;
+  }
+  .desktopEvent {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 5%;
+  }
+  .desktopEvent .smallDesktopDate {
+    width: 15vw;
+    height: 20vh;
+    background-color: initial;
+    color: #202324;
+    border: 1px solid #202324;
+  }
+  .desktopEvent .smallDesktopDate p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .desktopEvent .smallDesktopDate p span {
+    font-size: 67px;
+  }
+  .desktopEvent .desktopDetails {
+    padding-left: 5%;
+  }
+  .desktopEvent .desktopDetails p {
+    text-align: initial;
+  }
+  .desktopEvent .desktopDetails p .event-time {
+    text-decoration: none;
+    color: #000;
+  }
+  .desktopEvent .desktopDetails p .event-time:hover {
+    color: #d0963e;
   }
 }
 
