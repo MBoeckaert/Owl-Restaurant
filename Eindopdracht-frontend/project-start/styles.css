@@ -32,6 +32,12 @@ body {
   }
 }
 
+@media screen and (min-width: 990px) {
+  .container {
+    max-width: 90vw;
+  }
+}
+
 header {
   min-height: 5vh;
   width: 100%;
@@ -114,16 +120,16 @@ header {
 @media screen and (min-width: 765px) {
   .restaurantInfo {
     display: block;
-    width: 50%;
+    width: 66%;
   }
   .restaurantInfo .styleInfo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .restaurantInfo .styleInfo li {
     list-style: none;
@@ -137,6 +143,32 @@ header {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .restaurantInfo {
+    width: 50%;
+  }
+  .restaurantInfo .styleInfo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .socialTable {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 50%;
   }
 }
@@ -251,16 +283,16 @@ nav.sticky {
   visibility: visible;
 }
 
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 990px) {
   nav .menu {
-    max-width: 80vw;
+    max-width: 100vw;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   nav .menu .menuContainer {
-    width: 30%;
+    width: 20%;
     background-color: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -274,6 +306,7 @@ nav.sticky {
     display: none;
   }
   nav .menu .dropdownMenu {
+    width: 80%;
     visibility: visible;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -305,6 +338,12 @@ nav.sticky {
   }
   nav.sticky .anker {
     color: #000;
+  }
+}
+
+@media screen and (min-width: 1225px) {
+  nav .menu {
+    max-width: 90vw;
   }
 }
 
@@ -638,6 +677,12 @@ nav.sticky {
 }
 
 @media screen and (min-width: 765px) {
+  .specialFood img {
+    max-width: 70%;
+  }
+}
+
+@media screen and (min-width: 990px) {
   .specials {
     padding-top: 5%;
   }
@@ -1088,7 +1133,7 @@ p {
     font-size: 67px;
   }
   .desktopEvent .desktopDetails {
-    padding-left: 5%;
+    padding: 0 5%;
   }
   .desktopEvent .desktopDetails p {
     text-align: initial;
