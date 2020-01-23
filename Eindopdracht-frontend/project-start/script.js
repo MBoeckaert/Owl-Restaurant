@@ -21,8 +21,7 @@ const showNav = () => {
         console.log('closeNav');
         dropMenu.classList.toggle('dropActive');
     });
-
-}
+};
 
 showNav();
 
