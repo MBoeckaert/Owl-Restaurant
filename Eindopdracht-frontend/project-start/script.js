@@ -20,6 +20,11 @@ const showNav = () => {
         dropMenu.classList.toggle('dropActive');
         console.log('clicke');
     });
-}
+
+    dropAnker.addEventListener('click', closeNav => {
+        console.log('closeNav');
+        dropMenu.classList.toggle('dropActive');
+    });
+};
 
 showNav();

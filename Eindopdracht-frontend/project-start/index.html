@@ -20,59 +20,78 @@
         <div class="shade">
             <div class="container ">
                 <header>
-                    <ul>
-                        <li>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-basketball-ball"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-behance"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-rss"></i></a>
-                        </li>
+                    <ul class="restaurantInfo">
+                        <div class="styleInfo">
+                            <li><i class="far fa-envelope"></i> Email: Info@OwlRestaurant.com</li>
+                            <li><i class="fas fa-phone"></i> Telephone: 1800 234 5678</li>
+                        </div>
                     </ul>
-                    <a href="#" class="bookTable">Book A Table</a>
+                    <div class="socialTable">
+                        <ul class="socials">
+                            <li>
+                                <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.nba.com"><i class="fas fa-basketball-ball"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.behance.net"><i class="fab fa-behance"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.rss.com"> <i class=" fas fa-rss"></i></a>
+                            </li>
+                        </ul>
+                        <a href="#reservation" class="bookTable">Book A Table</a>
+                    </div>
+
                 </header>
             </div>
             <nav>
-                <a href="#" class="logo"><img src="../project-start/img/main_logo.png" alt="owlLogo"></a>
-
-                <a href="#" class="hamburger"><i class="fas fa-bars"></i></a>
-            </nav>
-
-            <div class="dropdownMenu">
-                <div class="dropdown">
-                    <button class="dropbtn">Home
-                        <i class="fas fa-caret-down"></i>
-                    </button>
-                </div>
-                <a href="#">About us</a>
-                <div class="dropdown">
-                    <button class="dropbtn">pages
-                        <i class="fas fa-caret-down"></i>
-                    </button>
+                <div class="menu">
+                    <div class="menuContainer">
+                        <a href="#homepage" class="logo"><img src="../project-start/img/main_logo.png"
+                                alt="owlLogo"></a>
+                        <a href="#homepage" class="logoSticky"><img src="../project-start/img/main_logo_black.png"
+                                alt="owlLogo"></a>
+                        <div class="hamburger">
+                            <i class="fas fa-bars"></i>
+                            <!-- </a> -->
+                        </div>
+                    </div>
+                    <div class="dropdownMenu">
+                        <div class="dropdown">
+                            <button class="dropbtn">Home
+                                <i class="fas fa-caret-down"></i>
+                            </button>
+                        </div>
+                        <a href="#ourStory" class="anker">About</a>
+                        <a href="#specials" class="anker">Promotions</a>
+                        <a href="#menu" class="anker">Menu</a>
+                        <a href="#reservation" class="anker">Reservation</a>
+                        <a href="#events" class="anker">Events</a>
+                        <a href="#blog" class="anker">Blog</a>
+                        <a href="#contact" class="anker">Contact</a>
+                    </div>
                 </div>
                 <a href="#">Reservation</a>
                 <a href="#">Events</a>
                 <a href="#">Menu</a>
                 <a href="#">Blog</a>
                 <a href="#">Contact</a>
-            </div>
-            <div class="slider">
-                <div class="burger">
-                    <div class="welcomeText">
-                        <h2>Welcome To</h2>
-                        <h1><b>Owl</b> Cafe & Restaurant</h1>
-                    </div>
-                    <a href="#" class="clickOnMe">Reservations</a>
+            </nav>
+        </div>
+        <div class="slider">
+            <div class="burger">
+                <div class="welcomeText">
+                    <h2>Welcome To</h2>
+                    <h1><b>Owl</b> Cafe & Restaurant</h1>
                 </div>
-                <!-- <div class="pizza">
+                <a href="#" class="clickOnMe">Reservations</a>
+            </div>
+            <!-- <div class="pizza">
                 <h2>Our Menu</h2>
                 <h1>See what's new today</h1>
                 <button class="headerBtn">Today's Menu</button>
@@ -82,10 +101,373 @@
                 <h1>To join with us</h1>
                 <button class="headerBtn">Book a Table</button>
             </div> -->
+        </div>
+    </div>
+
+    <div class="secondPage container" id="ourStory">
+        <div class="ourStory">
+            <h2>Our <span>Story</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            <a href="" class="readMore">Read More</a>
+        </div>
+        <div class="photos">
+            <img src="../project-start/img/about/download.jpg" alt="Waiter">
+            <img src="../project-start/img/about/download-1.jpg" class="firstPhoto" alt="Couple on table">
+        </div>
+
+    </div>
+
+    <div class="thirdPage" id="specials">
+        <div class="shade">
+            <div class="container">
+                <div class="specials">
+                    <h2>Specials</h2>
+                    <h1>Specials Promotion</h1>
+                </div>
+                <div class="foodContainer">
+                    <div class="specialFood">
+                        <img src="../project-start/img/promotions/promo_1.jpg" alt="breakfast">
+                        <div class="from">
+                            <p>From <br><span> $15</span></p>
+                        </div>
+                        <h2>Special Breakfast</h2>
+                        <a href="" class="orderNow">Order Now</a>
+                    </div>
+                    <div class="specialFood">
+                        <img src="../project-start/img/promotions/promo_2.jpg" alt="Lunch">
+                        <h2>Special Lunch</h2>
+                        <a href="" class="orderNow">Order Now</a>
+                        <div class="from">
+                            <p>From <br><span> $25</span></p>
+                        </div>
+                    </div>
+                    <div class="specialFood">
+                        <img src="../project-start/img/promotions/promo_3.jpg" alt="Dinner">
+                        <h2>Special Dinner</h2>
+                        <a href="" class="orderNow">Order Now</a>
+                        <div class="from">
+                            <p>From <br><span> $35</span></p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 
+    <div class="fourthPage" id="menu">
+        <div class="container">
+            <div class="specials">
+                <h2>Delicious</h2>
+                <h1>Today's Menu</h1>
+            </div>
+            <div class="allTheMenus">
+                <a href="" class="firstMenu">all</a>
+                <a href="" class="allMenu">breakfast</a>
+                <a href="" class="allMenu">lunch</a>
+                <a href="" class="allMenu">dinner</a>
+                <a href="" class="allMenu">coffee</a>
+                <a href="" class="allMenu">snacks</a>
+            </div>
+            <div class="presentationContainer">
+                <div class="menuPresentation">
+                    <img src="../project-start/img/menu/menu_-08.jpg" alt="cupcakes">
+                    <h4>Cupcake Recipes</h4>
+                    <p>$120.00</p>
+                </div>
+                <div class="menuPresentation">
+                    <img src="../project-start/img/menu/menu_-01.jpg" alt="cupcakes">
+                    <h4>Cupcake Recipes</h4>
+                    <p>$120.00</p>
+                </div>
+                <div class="menuPresentation">
+                    <img src="../project-start/img/menu/menu_-02.jpg" alt="cupcakes">
+                    <h4>Cupcake Recipes</h4>
+                    <p>$120.00</p>
+                </div>
+                <div class="menuPresentation">
+                    <img src="../project-start/img/menu/menu_-03.jpg" alt="cupcakes">
+                    <h4>Cupcake Recipes</h4>
+                    <p>$120.00</p>
+                </div>
+                <div class="menuPresentation">
+                    <img src="../project-start/img/menu/menu_-04.jpg" alt="cupcakes">
+                    <h4>Cupcake Recipes</h4>
+                    <p>$120.00</p>
+                </div>
+                <div class="menuPresentation">
+                    <img src="../project-start/img/menu/menu_-05.jpg" alt="cupcakes">
+                    <h4>Cupcake Recipes</h4>
+                    <p>$120.00</p>
+                </div>
+                <div class="menuPresentation">
+                    <img src="../project-start/img/menu/menu_-06.jpg" alt="cupcakes">
+                    <h4>Cupcake Recipes</h4>
+                    <p>$120.00</p>
+                </div>
+                <div class="menuPresentation">
+                    <img src="../project-start/img/menu/menu_-07.jpg" alt="cupcakes">
+                    <h4>Cupcake Recipes</h4>
+                    <p>$120.00</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="fifthPage container" id="reservation">
+        <div class="reservation">
+            <h2>Reservation</h2>
+            <h1>Reservation form</h1>
+        </div>
+        <form action="" method="post">
+            <div class="formRow">
+                <label for="reservation-name">
+                    <i class="far fa-user"></i>
+                </label>
+                <input type="text" name="reservation_name" class="reservation_name" placeholder="Your Name">
+            </div>
+            <div class="formRow">
+                <label for="reservation-mail">
+                    <i class="far fa-envelope"></i>
+                </label>
+                <input type="text" name="reservation-mail" class="reservation-mail" placeholder="Your Email">
+            </div>
+            <div class="formRow">
+                <label for="reservation-date">
+                    <i class="far fa-calendar-alt"></i>
+                </label>
+                <input type="text" name="reservation-date" class="reservation-date" placeholder="Expected Date">
+            </div>
+            <div class="formRow">
+                <label for="reservation-time">
+                    <i class="far fa-clock"></i>
+                </label>
+                <input type="text" name="reservation-time" class="reservation-time" placeholder="Expected Time">
+            </div>
+            <div class="formRow">
+                <label for="reservation-persons">
+                    <i class="fas fa-user-plus"></i>
+                </label>
+                <input type="text" name="reservation-persons" class="reservation-persons" placeholder="Total Person">
+            </div>
+            <div class="formRow">
+                <label for="reservation-phone">
+                    <i class="fas fa-phone-alt"></i>
+                </label>
+                <input type="text" name="reservation-phone" class="reservation-phone" placeholder="Phone No">
+            </div>
+        </form>
+        <form action="" class="secondForm">
+            <div class="commentRow">
+                <label for="comments">
+                    <i class="far fa-comment"></i>
+                </label>
+                <textarea name="reservation_message" class="reservation_message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="bookingTable">
+                <a href="" class="bookTable">Book My Table</a>
+            </div>
+        </form>
+        <p>Please submit your reservation detail & We'll contact you to confirm your booking</p>
+
+        <div class="intersection">
+            <div class="intersectionDiv">
+                <h4>Reserve by Phone</h4>
+                <p>We take reservations for lunch and dinner. To make a reservation, please call us at <b>
+                        (080)-1234-678</b>
+                    between 09am-7pm, Monday to Friday.</p>
+            </div>
+            <div class="intersectionDiv">
+                <h4>PRIVATE PARTIES & EVENTS</h4>
+                <p>We are honored to serve you a special day, great in your life such as birthday parties, weddings,
+                    conferences or meeting friends. If the size of the party, the event over 15 wheels, please let us
+                    know soon.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sixthPage" id="events">
+        <div class="container">
+            <div class="events">
+                <h2>Events</h2>
+                <h1>Next Coming</h1>
+            </div>
+            <div class="singleEvent">
+                <div class="eventImg">
+                    <img src="../project-start/img/event/event_-03.jpg" alt="speaker event">
+                    <div class="smallEventDate">
+                        <p><span>22</span> December</p>
+                    </div>
+                </div>
+                <div class="eventDetails">
+                    <h3>Katherin Ryan to Host Event Awards 2017</h3>
+                    <p class="event-meta"><a href="" class="event-time">29 September 2017 </a>- 196 Manhattan, MY, USA
+                    </p>
+                    <p>Comedian Katherine Ryan will present this year's Event Awards on 13 October at the iconic Eventim
+                        Apollo in Hammersmith, London.</p>
+                </div>
+            </div>
+            <div class="desktopEvent">
+                <div class="smallDesktopDate">
+                    <p><span>22</span> December</p>
+                </div>
+                <div class="desktopDetails">
+                    <h3>Katherin Ryan to Host Event Awards 2017</h3>
+                    <p class="event-meta"><a href="" class="event-time"> September 2017 </a>- 196 Manhattan, MY, USA
+                    </p>
+                    <p>Comedian Katherine Ryan will present this year's Event Awards on 13 October at the iconic Eventim
+                        Apollo in Hammersmith, London.</p>
+                </div>
+                <div class="desktopEventImg">
+                    <img src="../project-start/img/event/event_-03.jpg" alt="speaker event">
+                </div>
+            </div>
+            <div class="singleEvent">
+                <div class="eventImg">
+                    <img src="../project-start/img/event/event_-01.jpg" alt="speaker event">
+                    <div class="smallEventDate">
+                        <p><span>22</span> December</p>
+                    </div>
+                </div>
+                <div class="eventDetails">
+                    <h3>Katherin Ryan to Host Event Awards 2017</h3>
+                    <p class="event-meta"><a href="" class="event-time">29 September 2017 </a>- 196 Manhattan, MY, USA
+                    </p>
+                    <p>Comedian Katherine Ryan will present this year's Event Awards on 13 October at the iconic Eventim
+                        Apollo in Hammersmith, London.</p>
+                </div>
+            </div>
+            <div class="desktopEvent">
+                <div class="smallDesktopDate">
+                    <p><span>22</span> December</p>
+                </div>
+                <div class="desktopDetails">
+                    <h3>Katherin Ryan to Host Event Awards 2017</h3>
+                    <p class="event-meta"><a href="" class="event-time">29 September 2017 </a>- 196 Manhattan, MY, USA
+                    </p>
+                    <p>Comedian Katherine Ryan will present this year's Event Awards on 13 October at the iconic Eventim
+                        Apollo in Hammersmith, London.</p>
+                </div>
+                <div class="desktopEventImg">
+                    <img src="../project-start/img/event/event_-01.jpg" alt="speaker event">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="seventhPage container">
+        <div class="chefsHeader">
+            <h2>Delicious</h2>
+            <h1>Awesome chefs</h1>
+        </div>
+        <div class="teamChef">
+            <div class="chefs">
+                <div class="team">
+                    <img src="../project-start/img/team/team-1.jpg" alt="MArk angelila">
+                    <h3>Mark Angelila</h3>
+                    <p>Cras senunc massa quisque tempor dolor sit amet</p>
+                </div>
+            </div>
+            <div class="chefs">
+                <div class="team">
+                    <img src="../project-start/img/team/team-2.jpg" alt="MArk angelila">
+                    <h3>Angel Meskat</h3>
+                    <p>Cras senunc massa quisque tempor dolor sit amet</p>
+                </div>
+            </div>
+            <div class="chefs">
+                <div class="team">
+                    <img src="../project-start/img/team/team-3.jpg" alt="MArk angelila">
+                    <h3>Jon Doe</h3>
+                    <p>Cras senunc massa quisque tempor dolor sit amet</p>
+                </div>
+            </div>
+            <div class="chefs">
+                <div class="team">
+                    <img src="../project-start/img/team/team-4.jpg" alt="MArk angelila">
+                    <h3>Angel Di Maria</h3>
+                    <p>Cras senunc massa quisque tempor dolor sit amet</p>
+                </div>
+            </div>
+            <div class="chefs">
+                <div class="team">
+                    <img src="../project-start/img/team/team-5.jpg" alt="MArk angelila">
+                    <h3>Park Ji-Sung</h3>
+                    <p>Cras senunc massa quisque tempor dolor sit amet</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="eightPage" id="blog">
+        <div class="container">
+            <div class="news">
+                <h2>News</h2>
+                <h1>From the Blog</h1>
+            </div>
+            <div class="allBlog">
+                <div class="blogPictures">
+                    <img src="../project-start/img/blog/blog_-02.jpg" alt="festival">
+                    <div class="lifestyle">
+                        <a href="" class="lifestyleBtn">Life Style</a>
+                        <h3>Gravida posure quam eraseno seque rutrume rigular</h3>
+                        <p>24 February, 2017 - 5 Comments</p>
+                    </div>
+                </div>
+                <div class="blogPictures">
+                    <img src="../project-start/img/blog/blog_-01.jpg" alt="runners">
+                    <div class="lifestyle">
+                        <a href="" class="lifestyleBtn">Life Style</a>
+                        <h3>Gravida posure quam eraseno seque rutrume rigular</h3>
+                        <p>24 February, 2017 - 5 Comments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ninthPage" id="contact">
+        <div class="instagramTheme container">
+            <h4>Follow Us On Instagram <a href="" class="owlTheme">@OWLTheme</a></h4>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footerLogo">
+                    <img src="../project-start/img/footer_white_logo.png" alt="owl logo">
+                </div>
+                <div class="footerAdress">
+                    <p>20,floor,Queenslad Victoria Building. 60 california street california USA</p>
+                    <p><a href="mailto:owl@gmail.com">Hellow@OwlTheme.com</a></p>
+                    <p><a href="callto:+8800000001111">+88 000 0000 1111</a></p>
+                </div>
+                <div class="footerSocialMedia">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-basketball-ball"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-behance"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-rss"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="copyright">© 2017 Owl Restaurant All Right Reserved. Coded by BDEXPERT.</p>
+            </div>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>

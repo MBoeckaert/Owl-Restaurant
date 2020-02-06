@@ -26,18 +26,41 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 765px) {
+  .container {
+    max-width: 80vw;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .container {
+    max-width: 90vw;
+  }
+}
+
 header {
   min-height: 5vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.socialTable {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-header ul {
+.socialTable .socials {
   min-height: 5vh;
   min-width: 20%;
   display: -webkit-box;
@@ -53,27 +76,27 @@ header ul {
   padding-left: 0px;
 }
 
-header ul li {
+.socialTable .socials li {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header ul li a {
+.socialTable .socials li a {
   color: white;
   font-size: 14px;
   padding: 6px;
 }
 
-header ul li a:hover {
+.socialTable .socials li a:hover {
   background-color: #fff;
   color: #d0963e;
   -webkit-transition: background-color 0.7s ease-out;
   transition: background-color 0.7s ease-out;
 }
 
-header .bookTable {
+.socialTable .bookTable {
   text-decoration: none;
   background-color: #d0963e;
   color: #fff;
@@ -83,11 +106,71 @@ header .bookTable {
   letter-spacing: 2px;
 }
 
-header .bookTable:hover {
+.socialTable .bookTable:hover {
   background-color: #fff;
   color: #d0963e;
   -webkit-transition: background-color 0.7s ease-out;
   transition: background-color 0.7s ease-out;
+}
+
+.restaurantInfo {
+  display: none;
+}
+
+@media screen and (min-width: 765px) {
+  .restaurantInfo {
+    display: block;
+    width: 66%;
+  }
+  .restaurantInfo .styleInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .restaurantInfo .styleInfo li {
+    list-style: none;
+    color: #fff;
+    padding: 6px;
+  }
+  .socialTable {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .restaurantInfo {
+    width: 50%;
+  }
+  .restaurantInfo .styleInfo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .socialTable {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 50%;
+  }
 }
 
 nav {
@@ -124,6 +207,10 @@ nav.sticky {
 }
 
 .menu {
+  width: 100%;
+}
+
+.menu .menuContainer {
   padding: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,6 +224,10 @@ nav.sticky {
           justify-content: space-between;
   min-height: 10vh;
   background-color: #202324;
+}
+
+.logoSticky {
+  display: none;
 }
 
 .dropdownMenu {
@@ -189,8 +280,85 @@ nav.sticky {
   visibility: visible;
 }
 
+@media screen and (min-width: 990px) {
+  nav .menu {
+    max-width: 100vw;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .menu .menuContainer {
+    width: 20%;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  nav .menu .hamburger {
+    display: none;
+  }
+  nav .menu .dropdownMenu {
+    width: 80%;
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: transparent;
+    border-top: none;
+    padding: 3% 0;
+  }
+  nav.sticky {
+    background-color: #fff;
+    -webkit-box-shadow: 0 5px 8px #888888;
+            box-shadow: 0 5px 8px #888888;
+  }
+  nav.sticky .logo {
+    display: none;
+  }
+  nav.sticky .logoSticky {
+    display: block;
+  }
+  nav.sticky .dropdown .dropbtn {
+    color: #000;
+  }
+  nav.sticky .anker {
+    color: #000;
+  }
+}
+
+@media screen and (min-width: 1225px) {
+  nav .menu {
+    max-width: 90vw;
+  }
+}
+
 .slider {
   min-height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slider .burger {
@@ -292,6 +460,10 @@ nav.sticky {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -300,6 +472,44 @@ nav.sticky {
 
 .photos img {
   width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 765px) {
+  .secondPage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 7% 0;
+  }
+  .ourStory {
+    width: 40%;
+    padding: 0 30px 0 0;
+  }
+  .ourStory h2 {
+    text-align: initial;
+  }
+  .photos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 60%;
+    margin: 0;
+  }
+  .photos img {
+    padding: 0 15px;
+    width: 50%;
+  }
 }
 
 .readMore {
@@ -341,6 +551,7 @@ nav.sticky {
 
 .specials {
   margin-bottom: 30px;
+  padding-top: 50px;
 }
 
 .specials h2 {
@@ -462,6 +673,30 @@ nav.sticky {
   border: 1px solid transparent;
 }
 
+@media screen and (min-width: 765px) {
+  .specialFood img {
+    max-width: 70%;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .specials {
+    padding-top: 5%;
+  }
+  .specials h2 {
+    font-size: 80px;
+  }
+  .foodContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5% 0;
+  }
+  .foodContainer .specialFood {
+    padding: 0 15px;
+  }
+}
+
 .fourthPage {
   background-color: #f3f4f4;
 }
@@ -562,6 +797,22 @@ nav.sticky {
   font-size: 15px;
 }
 
+@media screen and (min-width: 765px) {
+  .presentationContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 3% 0;
+  }
+  .presentationContainer .menuPresentation {
+    width: 25%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
 .fifthPage .reservation {
   padding: 50px 0;
 }
@@ -598,11 +849,11 @@ form {
           flex-direction: column;
 }
 
-form .formRow {
+form .formRow, form .commentRow {
   position: relative;
 }
 
-form .formRow label {
+form .formRow label, form .commentRow label {
   position: absolute;
   font-size: 1.2em;
   height: 3vh;
@@ -611,7 +862,7 @@ form .formRow label {
   width: 3vw;
 }
 
-form .formRow input {
+form .formRow input, form .commentRow input {
   height: 5vh;
   width: 100%;
   border: 0;
@@ -619,23 +870,25 @@ form .formRow input {
   margin-bottom: 30px;
 }
 
-form .formRow textarea {
+form .formRow textarea, form .commentRow textarea {
   width: 100%;
   border: 0;
   border-bottom: 1px dashed;
   margin-bottom: 30px;
 }
 
-form .bookingTable {
+.bookingTable {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-form .bookingTable .bookTable {
+.bookingTable .bookTable {
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid #fff;
@@ -650,7 +903,7 @@ form .bookingTable .bookTable {
   margin-bottom: 30px;
 }
 
-form .bookingTable .bookTable:hover {
+.bookingTable .bookTable:hover {
   border: none;
   background-color: #d0963e;
   -webkit-transition: background-color 0.7s ease-out;
@@ -660,11 +913,11 @@ form .bookingTable .bookTable:hover {
   border: 1px solid transparent;
 }
 
-form p {
+p {
   text-transform: none;
   font-size: 15px;
   text-align: center;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 
 .intersection h4 {
@@ -678,11 +931,66 @@ form p {
   line-height: 2;
 }
 
+@media screen and (min-width: 765px) {
+  form {
+    max-width: 50vw;
+    max-height: 30vh;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  form .formRow {
+    width: 50%;
+  }
+  form .commentRow {
+    width: 100%;
+  }
+  .secondForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-bottom: 3%;
+  }
+  .bookingTable {
+    margin: 0 auto;
+  }
+  .intersection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5%;
+  }
+  .intersection .intersectionDiv {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 15px;
+    width: 50%;
+  }
+  .intersection .intersectionDiv p {
+    text-align: initial;
+  }
+}
+
 .sixthPage {
   background-image: url("../project-start/img/event/event_-02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+}
+
+.events {
+  padding-top: 50px;
 }
 
 .events h2 {
@@ -782,8 +1090,63 @@ form p {
   color: #202324;
 }
 
+.desktopEvent {
+  display: none;
+}
+
+@media screen and (min-width: 765px) {
+  .singleEvent {
+    display: none;
+  }
+  .desktopEvent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5%;
+  }
+  .desktopEvent .smallDesktopDate {
+    width: 15vw;
+    height: 20vh;
+    background-color: initial;
+    color: #202324;
+    border: 1px solid #202324;
+  }
+  .desktopEvent .smallDesktopDate p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .desktopEvent .smallDesktopDate p span {
+    font-size: 67px;
+  }
+  .desktopEvent .desktopDetails {
+    padding: 0 5%;
+  }
+  .desktopEvent .desktopDetails p {
+    text-align: initial;
+  }
+  .desktopEvent .desktopDetails p .event-time {
+    text-decoration: none;
+    color: #000;
+  }
+  .desktopEvent .desktopDetails p .event-time:hover {
+    color: #d0963e;
+  }
+}
+
 .chefsHeader {
   margin-bottom: 30px;
+  padding-top: 50px;
 }
 
 .chefsHeader h2 {
@@ -831,6 +1194,20 @@ form p {
 .chefs .team p {
   margin-bottom: 30px;
   text-align: center;
+}
+
+@media screen and (min-width: 765px) {
+  .teamChef {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .teamChef .chefs {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    padding: 2%;
+  }
 }
 
 .eightPage {
@@ -886,9 +1263,9 @@ form p {
 }
 
 .blogPictures .lifestyle {
-  position: absolute;
-  bottom: -6%;
-  left: 2.5%;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  margin-bottom: -150px;
   width: 85%;
   background-color: #fff;
   display: -webkit-box;
@@ -925,6 +1302,21 @@ form p {
 
 .blogPictures .lifestyle h3 {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 765px) {
+  .allBlog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .allBlog .blogPictures {
+    padding: 1%;
+  }
+  .allBlog .blogPictures .lifestyle {
+    width: 60%;
+    left: 10%;
+  }
 }
 
 .instagramTheme {
