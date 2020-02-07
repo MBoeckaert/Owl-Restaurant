@@ -40,7 +40,7 @@ line-height: 2;
     background: url("../project-start/img/slider/slide_1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .shade{
@@ -469,6 +469,7 @@ nav.sticky{
     }
     .foodContainer{
         display: flex;
+        justify-content: space-around;
         padding: 5% 0;
         .specialFood{
             padding: 0 15px;
